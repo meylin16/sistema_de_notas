@@ -90,24 +90,6 @@ if op==1:
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
 
-<<<<<<< HEAD
-if opcion==2: 
-   print('BIENVENIDO ESTUDIANTE')
-   op=int(input('INGRESE LA OPCIÓN 1 PARA VER EL REPORTE DE NOTAS O 2 PARA SALIR:'))
-   if op == 1:
-      print('MUESTRA DE GRAFICAS')
-      print(final) 
-      lista=sabernota
-   if op ==2:
-      print(quit())
-=======
-   if op==2:
-      print('BIENVENIDO ESTUDIANTE')
-      menu=menu_reportes()
-      nota1=reporte1()
-      nota2=reporte2()
-   
+
   
    
-  
->>>>>>> 0ffc1834ce6ec49a4b46eb392d54713379974c31
