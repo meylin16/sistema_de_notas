@@ -13,7 +13,7 @@ def llenar_registro():
         lista.append(datos)
     print(lista,file=archivo)
     return lista
-
+llenar=llenar_registro()
 
 
 def sabernota():
@@ -38,4 +38,4 @@ def sabernota():
     resultado=suma/len(new_lista)
     print(resultado,file=documentos)
     return (resultado)
-    
+final=sabernota()
