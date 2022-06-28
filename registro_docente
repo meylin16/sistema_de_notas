@@ -72,9 +72,10 @@ if opcion==1:
    boton.place(x=22, y=320)
 
    ventana.mainloop()
-   confirmar=input('POR FAVOR INGRESE SU CONTRASEÑA NUEVAMENTE:')
+   contrasena=input('POR FAVOR INGRESE SU CONTRASEÑA NUEVAMENTE:')
+   confirmar=input('ESTO ES PARA CONFIRMAR SU CONTRASEÑA POR FAVOR DIGITE SU CONTRASEÑA:')
 
-   if confirmar==contra:
+   if confirmar==contrasena:
       print('BIENVENIDO AL MODULO DE REGISTRO DE NOTAS')
       x=llenar_registro()
    else:

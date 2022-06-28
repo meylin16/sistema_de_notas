@@ -1,4 +1,3 @@
-
 from io import open 
 from tkinter import *
 from registro import *
