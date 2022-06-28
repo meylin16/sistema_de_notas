@@ -1,7 +1,5 @@
 from io import open 
 from tkinter import *
-from registro import *
-from graficas import *
 from tkinter import messagebox as mb
 import matplotlib.pyplot as plt
 
@@ -57,8 +55,6 @@ if op==1:
    contra= StringVar()
  
 
-
-
    nombre_entry= Entry(textvariable=nombre,width="40")
    apellido_entry= Entry(textvariable=apellido,width="40")
    usuario_entry= Entry(textvariable=usuario,width="40")
@@ -78,15 +74,10 @@ if op==1:
    confirmar=input('INGRESE LA CONTRASEÑA:')
    contrasena=input('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
    if confirmar==contrasena:
-      print('BIENVENIDO AL MODULO DE REGISTRO DE NOTAS')
-      llenar=llenar_registro()
-      final=sabernota()
-      
+      from registro import * 
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
-      
-   if op==2:
-      print('BIENVENIDO ESTUDIANTE')
-      menu=menu_reportes()
-      nota1=reporte1()
-      nota2=reporte2()
+
+if op==2:
+   from graficas import *
+

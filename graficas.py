@@ -1,6 +1,8 @@
+from re import T
 import matplotlib.pyplot as plt
 
 def reporte1():
+    print('BIENVENIDO ESTUDIANTE')
     x = []
     for renglon in t:
         arg=renglon.get('DOCUMENTO')
@@ -18,6 +20,7 @@ def reporte1():
     plt.ylabel('NOTAS')
     plt.title('REPORTE DE NOTAS CORTE 1')
     plt.show()
+nota1=reporte1()
 
 def reporte2():
     x = []
@@ -37,6 +40,7 @@ def reporte2():
     plt.ylabel('NOTAS')
     plt.title('REPORTE DE NOTAS CORTE 2')
     plt.show()
+nota2=reporte2()
 
 def menu_reportes():
     print("Elige opcion 1: Reporte de Notas corte 1")
@@ -53,7 +57,7 @@ def menu_reportes():
         elif (opcion==3):
             print(quit())
 
-
+menu=menu_reportes()
 
 
 

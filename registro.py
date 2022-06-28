@@ -13,10 +13,11 @@ def llenar_registro():
         lista.append(datos)
     print(lista,file=archivo)
     return lista
+    
 llenar=llenar_registro()
 
-
 def sabernota():
+    print('VISUALIZACIÓN DE NOTAS')
     documentos=open('nota_estudiante.txt',"w")
     sabernotas=[]
     doc=int(input('ingrese documento:'))
@@ -38,4 +39,5 @@ def sabernota():
     resultado=suma/len(new_lista)
     print(resultado,file=documentos)
     return (resultado)
-final=sabernota()
+
+saber=sabernota()
