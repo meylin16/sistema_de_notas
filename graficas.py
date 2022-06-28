@@ -1,16 +1,17 @@
 from re import T
+from registro import *
 import matplotlib.pyplot as plt
 
 def reporte1():
     print('BIENVENIDO ESTUDIANTE')
     x = []
-    for renglon in t:
+    for renglon in llenar:
         arg=renglon.get('DOCUMENTO')
         x.append(arg)
     print(x)
 
     y= []
-    for renglon in t:
+    for renglon in llenar:
         arg=renglon.get('NOTA1')
         y.append(arg)
     print(y)
@@ -24,13 +25,13 @@ nota1=reporte1()
 
 def reporte2():
     x = []
-    for renglon in t:
+    for renglon in llenar:
         arg=renglon.get('DOCUMENTO')
         x.append(arg)
     print(x)
 
     y= []
-    for renglon in t:
+    for renglon in llenar:
         arg=renglon.get('NOTA2')
         y.append(arg)
     print(y)
