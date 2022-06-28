@@ -1,10 +1,13 @@
 from io import open 
 from tkinter import *
 from registro import *
+from graficas import *
 from tkinter import messagebox as mb
+import matplotlib.pyplot as plt
+
 print('BIENVENIDO USUARIO\n')
-opcion=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
-if opcion==1:
+op=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
+if op==1:
    def guardar():
       nombre_data =nombre.get()
       apellido_data =apellido.get()
@@ -80,11 +83,12 @@ if opcion==1:
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
 
-if opcion==2: 
-   print('BIENVENIDO ESTUDIANTE')
-   op=int(input('INGRESE LA OPCIÓN 1 PARA VER EL REPORTE DE NOTAS O 2 PARA SALIR:'))
-   if op == 1:
-      print('MUESTRA DE GRAFICAS')
-      #funcion de graficos 
-   if op ==2:
-      print(quit())
+   if op==2:
+      print('BIENVENIDO ESTUDIANTE')
+      menu=menu_reportes()
+      nota1=reporte1()
+      nota2=reporte2()
+   
+  
+   
+  
