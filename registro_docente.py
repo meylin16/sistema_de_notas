@@ -6,13 +6,8 @@ from tkinter import messagebox as mb
 import matplotlib.pyplot as plt
 
 print('BIENVENIDO USUARIO\n')
-<<<<<<< HEAD
-opcion=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE , 2 PARA MODULO DE ESTUDIANTE Y 3 PARA SALIR :'))
-if opcion==1:
-=======
 op=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
 if op==1:
->>>>>>> 0ffc1834ce6ec49a4b46eb392d54713379974c31
    def guardar():
       nombre_data =nombre.get()
       apellido_data =apellido.get()
@@ -89,7 +84,9 @@ if op==1:
       
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
-
-
-  
-   
+      
+   if op==2:
+          print('BIENVENIDO ESTUDIANTE')
+      menu=menu_reportes()
+      nota1=reporte1()
+      nota2=reporte2()
