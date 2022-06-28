@@ -86,7 +86,7 @@ if op==1:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
       
    if op==2:
-          print('BIENVENIDO ESTUDIANTE')
+      print('BIENVENIDO ESTUDIANTE')
       menu=menu_reportes()
       nota1=reporte1()
       nota2=reporte2()
