@@ -71,7 +71,7 @@ if op==1:
    contra_entry.place(x=22, y=250)
 
 
-   boton= Button(ventana,text="guardar informacion",funcion=guardar,width="30",height="2",bg="cyan")
+   boton= Button(ventana,text="guardar informacion",command=guardar,width="30",height="2",bg="cyan")
    boton.place(x=22, y=320)
 
    ventana.mainloop()
