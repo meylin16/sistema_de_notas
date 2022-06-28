@@ -4,7 +4,7 @@ from tkinter import *
 from registro import *
 from tkinter import messagebox as mb
 print('BIENVENIDO USUARIO\n')
-opcion=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
+opcion=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE , 2 PARA MODULO DE ESTUDIANTE Y 3 PARA SALIR :'))
 if opcion==1:
    def guardar():
       nombre_data =nombre.get()
@@ -77,7 +77,9 @@ if opcion==1:
 
    if confirmar==contra:
       print('BIENVENIDO AL MODULO DE REGISTRO DE NOTAS')
-      x=llenar_registro()
+      llenar=llenar_registro()
+      final=sabernota()
+      
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
 
@@ -86,6 +88,7 @@ if opcion==2:
    op=int(input('INGRESE LA OPCIÓN 1 PARA VER EL REPORTE DE NOTAS O 2 PARA SALIR:'))
    if op == 1:
       print('MUESTRA DE GRAFICAS')
-      #funcion de graficos 
+      print(final) 
+      lista=sabernota
    if op ==2:
       print(quit())

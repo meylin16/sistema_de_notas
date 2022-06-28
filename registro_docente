@@ -85,6 +85,7 @@ if opcion==2:
    op=int(input('INGRESE LA OPCIÓN 1 PARA VER EL REPORTE DE NOTAS O 2 PARA SALIR:'))
    if op == 1:
       print('MUESTRA DE GRAFICAS')
+      
       #funcion de graficos 
    if op ==2:
       print(quit())
