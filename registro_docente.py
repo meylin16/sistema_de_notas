@@ -1,9 +1,7 @@
 from io import open 
 from tkinter import *
-from registro import *
-from graficas import *
-from tkinter import messagebox as mb
-import matplotlib.pyplot as plt
+from tkinter import messagebox as mb 
+import getpass
 
 print('BIENVENIDO USUARIO\n')
 op=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
@@ -57,8 +55,6 @@ if op==1:
    contra= StringVar()
  
 
-
-
    nombre_entry= Entry(textvariable=nombre,width="40")
    apellido_entry= Entry(textvariable=apellido,width="40")
    usuario_entry= Entry(textvariable=usuario,width="40")
@@ -75,6 +71,7 @@ if op==1:
    boton.place(x=22, y=320)
 
    ventana.mainloop()
+<<<<<<< HEAD
    confirmar=input('INGRESE LA CONTRASEÑA:')
    contrasena=input('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
    from registro import *
@@ -94,3 +91,17 @@ if op==1:
       menu=menu_reportes()
       
    
+=======
+   confirmar= getpass.getpass('INGRESE LA CONTRASEÑA:')
+   contrasena=getpass.getpass('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
+   if confirmar==contrasena:
+      print('contraseña correcta')
+      from registro import *
+   else:
+      print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
+
+if op==2:
+   from graficas import*
+
+
+>>>>>>> deb0ad3e028d3640955779bccf36c4adb1ddacc6

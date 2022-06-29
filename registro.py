@@ -1,6 +1,7 @@
 def llenar_registro():
     archivo=open('registro_estudiantes.txt',"w")
     lista=[]
+    print('REGISTRO DE NOTAS')
     estudiantes=int(input('cuantos estudiantes desea ingresar:'))
     for i in range(estudiantes):
         documento=int(input('ingrese el numero del documento:'))
@@ -14,6 +15,7 @@ def llenar_registro():
     print(lista,file=archivo)
     return lista
 llenar=llenar_registro()
+<<<<<<< HEAD
 
 
 def dato1(x):
@@ -42,7 +44,11 @@ def dato3(x):
 V3=dato3(x)
 
 
+=======
+>>>>>>> deb0ad3e028d3640955779bccf36c4adb1ddacc6
 def sabernota():
+    print('VISUALIZACIÓN DE NOTA FINAL')
+    print('AVISO!! LA NOTA SE PODRA ALMACENAR Y VISUALIZAR EN EL ARCHIVO DE NOTAS_ESTUDIANTE')
     documentos=open('nota_estudiante.txt',"w")
     sabernotas=[]
     doc=int(input('ingrese documento:'))
@@ -64,4 +70,4 @@ def sabernota():
     resultado=suma/len(new_lista)
     print(resultado,file=documentos)
     return (resultado)
-final=sabernota()
+saber=sabernota()
