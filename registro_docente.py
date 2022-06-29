@@ -1,7 +1,7 @@
 from io import open 
 from tkinter import *
-from tkinter import messagebox as mb
-import matplotlib.pyplot as plt
+from tkinter import messagebox as mb 
+import getpass
 
 print('BIENVENIDO USUARIO\n')
 op=int(input('INGRESE OPCIÓN 1 PARA MODULO DE DOCENTE O 2 PARA MODULO DE ESTUDIANTE:'))
@@ -71,13 +71,15 @@ if op==1:
    boton.place(x=22, y=320)
 
    ventana.mainloop()
-   confirmar=input('INGRESE LA CONTRASEÑA:')
-   contrasena=input('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
+   confirmar= getpass.getpass('INGRESE LA CONTRASEÑA:')
+   contrasena=getpass.getpass('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
    if confirmar==contrasena:
-      from registro import * 
+      print('contraseña correcta')
+      from registro import *
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
 
 if op==2:
-   from graficas import *
+   from graficas import*
+
 
