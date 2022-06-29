@@ -1,0 +1,1 @@
+[{'DOCUMENTO': 1342, 'NOTA1': 2.0, 'NOTA2': 3.0}, {'DOCUMENTO': 5432, 'NOTA1': 4.0, 'NOTA2': 2.0}]
