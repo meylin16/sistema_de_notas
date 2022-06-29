@@ -67,41 +67,29 @@ if op==1:
    contra_entry.place(x=22, y=250)
 
 
-   boton= Button(ventana,text="guardar informacion",funcion=guardar,width="30",height="2",bg="cyan")
+   boton= Button(ventana,text="guardar informacion",command=guardar,width="30",height="2",bg="cyan")
    boton.place(x=22, y=320)
 
    ventana.mainloop()
-<<<<<<< HEAD
-   confirmar=input('INGRESE LA CONTRASEÑA:')
-   contrasena=input('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
-   from registro import *
-      if confirmar==contrasena:
-         print('BIENVENIDO AL MODULO DE REGISTRO DE NOTAS')
-         llenar=llenar_registro()
-         final=sabernota()
-      
-      else:
-         print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
-   from graficas import * 
-   if op==2:
-      print('BIENVENIDO ESTUDIANTE')
-      lista=llenar_registro()
-      nota1=reporte1()
-      nota2=reporte2()
-      menu=menu_reportes()
-      
-   
-=======
    confirmar= getpass.getpass('INGRESE LA CONTRASEÑA:')
    contrasena=getpass.getpass('PARA CONFIRMAR SU CONTRASEÑA INGRESELA NUEVAMENTE:')
    if confirmar==contrasena:
-      print('contraseña correcta')
+      print('BIENVENIDO AL MODULO DE REGISTRO DE NOTAS')
       from registro import *
+      from graficas import *
+      llenar=llenar_registro()
+      final=sabernota()
+     
    else:
       print('CONTRASEÑA INCORRECTA POR FAVOR CIERRE LA VENTANA E INTENTE NUEVAMENTE')
 
 if op==2:
-   from graficas import*
+   print('BIENVENIDO ESTUDIANTE')
+   from  graficas import *
+   print(saber1)
+   print(saber2)
+   print(menu)
+      
+    
 
 
->>>>>>> deb0ad3e028d3640955779bccf36c4adb1ddacc6

@@ -15,37 +15,8 @@ def llenar_registro():
     print(lista,file=archivo)
     return lista
 llenar=llenar_registro()
-<<<<<<< HEAD
 
 
-def dato1(x):
-    listadocumentos=[]
-    for i in range (len(x)):
-        for j in x[i]:
-            if j=="DOCUMENTO":
-                listadocumentos.append(x[i][j])
-    return listadocumentos
-V1=dato1(x)
-def dato2(x):
-    listadocumentos1=[]
-    for i in range (len(x)):
-        for j in x[i]:
-            if j=="NOTA1":
-                listadocumentos1.append(x[i][j])
-    return listadocumentos1
-V2=dato2(x)
-def dato3(x):
-    listadocumentos2=[]
-    for i in range (len(x)):
-        for j in x[i]:
-            if j=="NOTA2":
-                listadocumentos2.append(x[i][j])
-    return listadocumentos2
-V3=dato3(x)
-
-
-=======
->>>>>>> deb0ad3e028d3640955779bccf36c4adb1ddacc6
 def sabernota():
     print('VISUALIZACIÓN DE NOTA FINAL')
     print('AVISO!! LA NOTA SE PODRA ALMACENAR Y VISUALIZAR EN EL ARCHIVO DE NOTAS_ESTUDIANTE')
